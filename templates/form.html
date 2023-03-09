@@ -1,0 +1,21 @@
+<!--Evan Pulido-->
+<!--ITSC 3155-->
+
+<!--Link that helped me understand this: https://www.w3schools.com/tags/att_form_action.asp-->
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <!--Title of the home page-->
+      <h1>Home</h1>
+
+      <!--Explanation telling the user what to do-->
+      <p>Enter an integer to find out if it is even or odd</p>
+
+      <form action="{{ url_for("form")}}" method="post">
+         <label for="number">Number</label> <br>
+         <input type="text" id="number" name="integer" placeholder="number"> <br><br>
+         <button type="submit">SUBMIT</button>
+      </form>
+   </body>
+</html>
